@@ -5,10 +5,8 @@
 //     console.log('I am inside the log function')
 // }
 const welcome = function(){
-    console.log('Welcome to my application. I am <name> and a part of FunctionUp Thorium cohort.')
+    console.log('Welcome to my application. I am Faizan and a part of FunctionUp Radon cohort.')
 }
 
-// module.exports.endpoint = endpoint
-// module.exports.batch = batch
-module.exports.log = log
+
 module.exports.welcome=welcome
