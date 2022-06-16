@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const userSchema = new mongoose.Schema( {
+const userSchema = new mongoose.Schema({
     firstName: String,
     lastName: String,
     mobile: {
@@ -14,11 +14,12 @@ const userSchema = new mongoose.Schema( {
         type: String,
         enum: ["male", "female", "other"]
     },
-    IsDeleted:{
-        type : Boolean,
-        default : false
+    IsDeleted: {
+        type: Boolean,
+        default: false
     },
     age: Number,
+    posts: { type: [], default: [] }
 }, { timestamps: true });
 
 module.exports = mongoose.model('AuthUser', userSchema)
